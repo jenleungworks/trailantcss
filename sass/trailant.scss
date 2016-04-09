@@ -1,6 +1,6 @@
 @import "bootstrap";
-/* add site style here */
 
+/* The idea is that this style-guide will be a living one, where the CSS pulls from the atcual theme wthin the code (editing the theme will affect the style guide) As the site gets built out more, there should be inclusion of components to ensure that everything looks the same across the board */
 
 
 // Colour varables
@@ -14,6 +14,7 @@ $brand-warning-lighter: rgba(217,146,146,0.08);
 
 $white: #FFFFFF;
 
+//this gray is from bootstrap
 $gray-base:              #000;
 $gray-darker:            lighten($gray-base, 13.5%); // #222
 $gray-dark:              lighten($gray-base, 20%);   // #333
@@ -21,7 +22,9 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%);// #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-$text-color:            $gray-dark !default;
+
+//other variables
+$text-color:            $gray-dark;
 
 // Font Weights
 $light: 300;
@@ -31,7 +34,7 @@ $extra-bold: 900;
 
 $light-italic: 300italic;
 
-// Unit
+// Base unit - margins are based on this. 
 $unit: 16px;
 
 /* font sizes*/
@@ -58,7 +61,8 @@ $smaller: 14px;
     padding: $unit*1.5;
 }
     
-    
+ 
+//style guide code
 * {
     border-radius: 0 !important;
     
@@ -111,7 +115,7 @@ form input {
 
 
 
-//btns
+//buttons
 
 .btn-primary {
     font-weight: bold;
