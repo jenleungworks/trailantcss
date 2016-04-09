@@ -1,0 +1,209 @@
+@import "bootstrap";
+/* add site style here */
+
+
+
+// Colour varables
+$brand-primary: #165061;
+$brand-primary-light: #396F7D;
+$brand-primary-lighter: rgba(22,80,97,0.08);
+
+$brand-warning: #D99292; 
+$brand-warning-light: #dea8a8;
+$brand-warning-lighter: rgba(217,146,146,0.08);
+
+$white: #FFFFFF;
+
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             lighten($gray-base, 46.7%);// #777
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+
+$text-color:            $gray-dark !default;
+
+// Font Weights
+$light: 300;
+$normal: 400;
+$demi-bold: 700;
+$extra-bold: 900;
+
+$light-italic: 300italic;
+
+// Unit
+$unit: 16px;
+
+/* font sizes*/
+$smaller: 14px;
+
+/* Style guide specific css */
+.style-header {
+    border-top: 1px solid $gray-light;
+    padding-top: $unit*1.5;
+    margin-bottom: $unit*1.5;
+    text-transform: uppercase;
+    font-size: $unit*0.80;
+    color: $gray-light;
+}
+
+.style-header-2 {
+    text-transform: lowercase;
+    border-top: 0;
+    padding-top: $unit;
+}
+
+.green-background {
+    background-color: $brand-primary;
+    padding: $unit*1.5;
+}
+    
+    
+* {
+    border-radius: 0 !important;
+    
+    font-family: "lato";
+    font-size: $unit;
+    line-height: $unit*2;
+}
+
+a {
+    font-weight:$demi-bold;
+    color: $brand-primary;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: $extra-bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: $extra-bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: $extra-bold;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: $extra-bold;
+    margin-bottom:$unit*0.3;
+}
+
+form input {
+    box-shadow: 0;
+}
+
+.light {
+    color: $white;
+}
+
+.warning {
+    color: $brand-warning;
+}
+
+.warning:hover {
+    color: $brand-warning;
+}
+
+
+
+//btns
+
+.btn-primary {
+    font-weight: bold;
+    border: 3px solid $brand-primary;
+    background: $brand-primary;
+    font-size: $smaller;
+    color: $white;
+}
+
+.btn-primary:hover {
+    background-color: $brand-primary-light;
+    border-color: $brand-primary-light;
+}
+
+
+.btn-secondary {
+    font-weight:bold;
+    background: $brand-primary-lighter;
+    border: 3px solid $brand-primary;
+    font-size: $smaller;
+    color: $brand-primary;
+}
+
+.btn-secondary:hover {
+    color: $brand-primary-light;
+    border-color: $brand-primary-light;
+}
+
+.btn-warning-secondary {
+    font-weight:bold;
+    background: $brand-warning-lighter;
+    border: 3px solid $brand-warning;
+    font-size: $smaller;
+    color: $brand-warning;
+}
+
+.btn-warning-secondary:hover {
+    color: $brand-warning-light;
+    border-color: $brand-warning-light;
+}
+
+
+.btn-tertiary {
+    font-weight: bold;
+    font-size: $smaller;
+    border: none;
+    background: none;
+    font-color: $brand-primary;
+}
+
+.btn-warning {
+    background: rgba(217,146,146,0.08);
+    border: 3px solid $brand-warning;
+    background: $brand-warning;
+    font-size: $smaller;
+    font-weight: bold;
+    color: $white;
+}
+
+.btn-warning:hover {
+    background-color: $brand-warning-light;
+    border-color: $brand-warning-light;
+}
+
+.btn-white {
+    background-color: $white;
+    color: $brand-primary;
+    font-size: $smaller;
+}
+
+//Notifiacations
+.notification {
+    background-color: rgba(22,80,97,0.08);
+}
+
+.notification-inside {
+    padding: 20px;
+}
+
+//Panel Header
+.panel-header {
+    background-color: $brand-primary;
+    padding: 12px;
+    }
+.panel-header h2 {
+    margin: 0;
+}
+
+.panel-body {
+    margin-bottom: $unit*3;
+}
+
+.panel-body h2 {
+    padding-top: $unit*2;
+}
